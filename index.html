@@ -13,9 +13,10 @@
     .card { overflow: hidden; border: 1px solid #dfe7e2; border-radius: 10px; background: #fff; box-shadow: 0 18px 46px rgba(18,48,37,.12); }
     img, .portrait-placeholder { display: block; box-sizing: border-box; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: #eaf5ef; }
     .portrait-placeholder { display: grid; place-items: center; color: #355448; font-weight: 700; }
-    .body { padding: 20px; } h1 { font-size: 1.4rem; margin: 0; } h2 { font-size: 1rem; margin: 28px 0 8px; }
+    .body { padding: 20px; } .card-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; } h1 { font-size: 1.4rem; margin: 0; } h2 { font-size: 1rem; margin: 28px 0 8px; }
     .role, .location, .summary, .muted { color: #667278; } .practice { font-weight: 750; margin: 8px 0 2px; }
     .chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0; } .chip { background: #eaf5ef; color: #0d5138; border-radius: 6px; padding: 5px 8px; font-size: .78rem; }
+    .language-boxes { display: flex; align-items: center; justify-content: flex-end; gap: 4px; flex-wrap: wrap; } .language-box { display: inline-grid; place-items: center; width: 22px; height: 22px; overflow: hidden; border: 1px solid #dfe7e2; border-radius: 50%; background: #fff; font-size: 19px; line-height: 1; flex: 0 0 auto; } .language-initials { background: #eaf5ef; color: #0d5138; font-size: 9px; font-weight: 800; }
     .type { color: #0d5138; font-weight: 750; } a { color: #0d5138; } ul { margin: 0; padding-left: 20px; }
   </style>
 </head>
@@ -25,7 +26,7 @@
     <article class="card" aria-label="Entwurf der Praxis-Card">
       <img src="https://www.zentrum-schmerzlos.at/uploads/9y7cqfXN/Jurgen_800_web__msi___jpg.jpg" alt="Öffentliches Praxisportrait" referrerpolicy="no-referrer">
       <div class="body">
-        <h1>Mag. Jürgen Trauner, BSc.</h1>
+        <div class="card-heading"><h1>Mag. Jürgen Trauner, BSc.</h1><div class="language-boxes" aria-label="Sprachen: Deutsch"><span class="language-box" title="Deutsch" aria-label="Deutsch" role="img">🇩🇪</span></div></div>
         <div class="role">Physiotherapeut</div>
         <div class="practice">Medizinisches Zentrum SchmerzLOS</div>
         <div class="location">⌖ Urfahr</div>
